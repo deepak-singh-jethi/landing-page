@@ -21,7 +21,7 @@ header {
     justify-content: center;
     text-align: center;
     padding-top: 30px;
-    width: 100vw !important;
+    width: 100vw;
     margin-bottom: 30px;
 }
 
@@ -39,7 +39,7 @@ header::before {
 .header-content {
     position: relative;
     z-index: 2;
-    width: 100vw!;
+    width: 100vw;
 }
 
 .logo {
@@ -131,7 +131,7 @@ button:hover {
 
 /* Hero Area */
 .hero-area {
-    width: 100vw !important;
+    width: 100vw ;
     gap: 30px;
     padding: 20px;
     margin-top: 60px;
@@ -152,11 +152,11 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     z-index: 10;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .hero-area-2 {
-    width: 100vw !important;
+    width: 100vw;
     gap: 30px;
     margin-top: 60px;
     background-image: url("./assests/banner 2.jpg");
@@ -176,7 +176,7 @@ button:hover {
     align-items: flex-end;
     flex-direction: column;
     z-index: 10;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 .hero-area h1 {
@@ -226,4 +226,74 @@ button:hover {
 .image-container img {
     height: 100%;
     width: auto;
+}
+
+/* footer */
+
+.footer {
+    background-color: #000;
+    color: #919191;
+    padding: 3rem 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+.footer-column p {
+    margin: 0.5rem 0;
+}
+
+.footer-heading {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-links,
+.footer-social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.footer-social-links{
+    display: flex;
+}
+
+.footer-links li,
+.footer-social-links li {
+    margin: 0.5rem 0;
+}
+
+.footer-links a,
+.footer-social-links a {
+    color: #919191;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social-links a:hover {
+    color: #919191;
+}
+
+.footer-social-links a i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
 }

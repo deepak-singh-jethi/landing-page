@@ -39,8 +39,8 @@
 }
 
 .cars-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -60,7 +60,7 @@
     margin-bottom: 20px;
     background-color: #fff;
     transition: all ease 0.7s;
-    box-shadow: 0 4px 8px rgba(159, 158, 158, 0.1);
+    box-shadow: 0 0px 10px rgba(152, 152, 152, 0.5);
     padding-block:15px ;
     animation: cars 1.2s ease-in;
     /* Default box shadow */
@@ -149,7 +149,7 @@
     font-weight: 800;
     margin-bottom: 10px;
     border-radius: 10px;
-    transition: background-color 0.8s;
+    transition: background-color 1s;
 
     /* Transition for background color change */
 }
