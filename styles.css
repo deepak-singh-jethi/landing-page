@@ -68,7 +68,7 @@ header::before {
 }
 
 #whatsappButton {
-    background-color: #058f3e;
+    background-color: #28A71A;
     color: #fff;
     border: none;
     padding: 10px 24px;
@@ -78,6 +78,15 @@ header::before {
     margin-bottom: 20px;
     font-family: sans-serif;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+#whatsappButton >span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 button:hover {
@@ -396,8 +405,6 @@ button:hover {
 
     margin-bottom: 34px;
 
-    display: flex;
-    align-items: center;
 }
 .features{
     display: grid;
@@ -461,4 +468,8 @@ button:hover {
   }
 
 
+}
+.whatsapp-icon{
+    width: 2rem;
+    height: 2rem;
 }

@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
     reserveButton.href = car.reserveLink;
     reserveButton.textContent = "Reserve Now";
     reserveButton.classList.add("reserve-button");
-    reserveButton.innerHTML = `<i class="fab fa-whatsapp"></i> Reserve Now`;
+    reserveButton.innerHTML = ` <img src="./assets/whatsapp (1).png" alt="" class="whatsapp-icon" /> Reserve Now`;
     detailsContainer.appendChild(reserveButton);
 
     carCard.appendChild(detailsContainer);

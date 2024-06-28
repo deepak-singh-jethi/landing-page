@@ -158,9 +158,12 @@
 }
 
 .reserve-button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     padding: 10px 20px;
-    background-color: rgb(4, 132, 17);
+    background-color: #28A71A;
     color: #fff;
     text-decoration: none;
     border-radius: 10px;
@@ -168,6 +171,7 @@
     text-align: center;
     margin-top: 20px;
     font-weight: 600;
+
 }
 .reserve-button i{
     margin-right: 10px;
@@ -175,7 +179,7 @@
 }
 
 .reserve-button:hover {
-    background-color: rgb(9, 147, 9);
+    scale: 1.009;
 }
 @media (max-width: 480px) {
     .car-types-area {
