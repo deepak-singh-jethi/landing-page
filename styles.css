@@ -40,6 +40,10 @@ header::before {
     position: relative;
     z-index: 2;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .logo {
@@ -88,6 +92,8 @@ button:hover {
     background-color: white;
     padding: 4px 6px;
     border-radius: 5px;
+    width: fit-content;
+    margin-inline: auto;
 }
 
 .features li {
