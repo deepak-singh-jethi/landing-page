@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 body {
-    font-family: sans-serif;
+    font-family: "Source Sans 3", sans-serif;;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -131,6 +133,7 @@ button:hover {
     background-image: linear-gradient(to right, rgba(9, 132, 112, 0.5), rgb(156, 245, 214));
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 
 }
 .hero-area::before {
@@ -145,10 +148,8 @@ button:hover {
 }
 .hero-wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items: center;
-    width: 95%;
-    margin-inline: auto;
 }
 
 .hero-head {
@@ -186,11 +187,15 @@ button:hover {
 }
 
 .image-container{
-    width: 200px;
+    width: 300px;
     height: 200px;
 }
 
 .image-container img{
     height: 100%;
     width: auto;
+}
+
+.active-button {
+    background: red;
 }
