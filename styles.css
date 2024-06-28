@@ -333,9 +333,30 @@ button:hover {
 .hero-area h1, .hero-area-2 h1 {
     font-size: 24px;
     text-align: center;
+    color: white;
 }
+
+
 .hero-area-2{
     display: block;
+    background-position: left;
+    position: relative;
+}
+.hero-area-2::before,.hero-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none;
+
+}
+.hero-area-2>*,.hero-area>* {
+    position: relative;
+    z-index: 2;
 }
 .hero-head{
   margin-left: 4px;
@@ -359,7 +380,8 @@ button:hover {
     margin-top: 60px;
     margin-inline: auto;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: right;
+    position: relative;
 
 }
 .header-content h1 {
@@ -434,6 +456,9 @@ button:hover {
     margin-bottom: 0px;
     margin-top: 25px;
  }
+  .footer-bottom{
+    margin-inline: 20px;
+  }
 
 
 }
