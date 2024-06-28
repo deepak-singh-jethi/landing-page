@@ -5,7 +5,6 @@
     font-family: "Source Sans 3", sans-serif;
     margin: 0;
     padding: 0;
-   
     box-sizing: border-box;
 }
 
@@ -267,6 +266,7 @@ button:hover {
 .footer-logo {
     max-width: 150px;
     margin-bottom: 1rem;
+    background-color:white ;
 }
 
 .footer-column p {
@@ -334,11 +334,16 @@ button:hover {
     font-size: 24px;
     text-align: center;
 }
+.hero-area-2{
+    display: block;
+}
 .hero-head{
   margin-left: 4px;
+  align-items: center;
 }
 .hero-head-2{
     margin-right: 4px;
+    justify-content: center !important;
 }
 .whatsapp-Hero-Button {
     padding: 4px 11px;
@@ -350,8 +355,9 @@ button:hover {
 }
 .hero-area {
     height: 35vh;
-    padding: 53px;
+    padding: 8px;
     margin-top: 60px;
+    margin-inline: auto;
     background-repeat: no-repeat;
     background-position: left;
 
@@ -370,6 +376,9 @@ button:hover {
 
     display: flex;
     align-items: center;
+}
+.features{
+    display: grid;
 }
 .features li {
 
@@ -404,17 +413,27 @@ button:hover {
 .footer-column p {
     font-size: 16px;
 }
- .footer-container {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     align-items: end;
-     justify-items: end;
- }
+         .footer-container {
+             display: grid;
+             grid-template-columns: 1fr;
+             align-items: center;
+             justify-items: center;
+         }
  .footer-column{
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
  }
  .footer {
      padding: 0;
  }
+ .footer-heading{
+    margin-bottom: 0px;
+    margin-top: 25px;
+ }
+
 
 }
