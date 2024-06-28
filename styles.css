@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+
 body {
-    font-family: "Source Sans 3", sans-serif;;
+    font-family: "Source Sans 3", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    box-sizing: border-box;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 header {
     position: relative;
     background: url('https://images.pexels.com/photos/3763190/pexels-photo-3763190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
-   height: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding-top: 30px;
+    width: 100vw !important;
+    margin-bottom: 30px;
 }
 
 header::before {
@@ -31,22 +36,19 @@ header::before {
     z-index: 1;
 }
 
-
 .header-content {
     position: relative;
     z-index: 2;
+    width: 100vw!;
 }
 
 .logo {
     background-image: url('https://mkvluxury.com/wp-content/themes/mkv/img/logo.svg');
-   
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 150px;
-   
     height: 150px;
-   
     z-index: 10;
     margin: 0 auto;
 }
@@ -57,7 +59,6 @@ header::before {
     margin: 0 0 20px;
     max-width: 60rem;
 }
-
 
 #whatsappButton {
     background-color: #058f3e;
@@ -76,9 +77,7 @@ button:hover {
     background-color: #128c7e;
 }
 
-
-/* features */
-
+/* Features */
 .features {
     list-style: none;
     padding: 0;
@@ -86,11 +85,9 @@ button:hover {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: space-around;
-    flex-wrap: wrap;
     background-color: white;
     padding: 4px 6px;
     border-radius: 5px;
-    
 }
 
 .features li {
@@ -98,6 +95,7 @@ button:hover {
     align-items: center;
     margin: 15px;
     line-height: 23px;
+    max-width: 400px;
 }
 
 .feature-logo {
@@ -122,29 +120,32 @@ button:hover {
     color: #434040;
     font-size: 18px;
     font-weight: 550;
-    padding: 0;
-    margin: 0;
 }
-.feature-div{
+
+.feature-div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: start;
+    align-items: flex-start;
 }
 
-/* hero area */
+/* Hero Area */
 .hero-area {
-    width: 100%;
+    width: 100vw !important;
     gap: 30px;
     padding: 20px;
     margin-top: 60px;
-    background-image: url("./assests/banner\ 1.jpg");
+    background-image: url("./assests/banner 1.jpg");
     height: 40vh;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+
 .hero-head {
     height: 100%;
     display: flex;
@@ -155,27 +156,24 @@ button:hover {
 }
 
 .hero-area-2 {
-    width: 100vw;
+    width: 100vw !important;
     gap: 30px;
     margin-top: 60px;
-    background-image: url("./assests/banner\ 2.jpg");
+    background-image: url("./assests/banner 2.jpg");
     height: 40vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 100;
     display: flex;
-    overflow: hidden;
     justify-content: flex-end;
+    align-items: center;
 }
 
-
-
-.hero-head-2{
+.hero-head-2 {
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     flex-direction: column;
     z-index: 10;
     margin-right: 100px;
@@ -185,45 +183,47 @@ button:hover {
     font-size: 50px;
     color: #000000;
     text-align: left;
-    font-weight: 800;
-
+    font-weight: 700;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
-.hero-area-2 h1{
+.hero-area-2 h1 {
     text-align: end;
     font-size: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .whatsapp-Hero-Button {
     background-color: white;
-    color: #058f3e;
+    color: #13a04e;
     border: none;
-    padding:16px 24px;
+    padding: 16px 24px;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     border-radius: 10px;
     width: fit-content;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    
 }
 
 .whatsapp-Hero-Button:hover {
     background-color: #f0f0f0;
 }
-.hero-image-container{
+
+.hero-image-container {
     z-index: 10;
-    
 }
 
-.image-container{
+.image-container {
     width: 300px;
     height: 200px;
 }
 
-.image-container img{
+.image-container img {
     height: 100%;
     width: auto;
-}
-
-.active-button {
-    background: red;
 }
