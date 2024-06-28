@@ -1,4 +1,4 @@
-Example CSS
+
 .car-types-area {
     display: flex;
     justify-content: center;
@@ -17,8 +17,6 @@ Example CSS
     scale: 1.5;
 }
 .button-div >p {
-    padding: 0;
-    margin: 0;
     color: #303030;
 }
 
@@ -65,7 +63,6 @@ Example CSS
     box-shadow: 0 0px 10px rgba(152, 152, 152, 0.5);
     padding-block:15px ;
     animation: cars 1.2s ease-in;
-    /* Default box shadow */
 }
 
 @keyframes cars {
@@ -86,7 +83,6 @@ Example CSS
     .car-price{
         background-color: #f0ad4e;
     }
-    /* Enhanced box shadow on hover */
 }
 
 .car-image {
@@ -144,34 +140,33 @@ Example CSS
 }
 
 .car-price {
-    width: 95%;
+
     background-color: rgba(103, 241, 232, 0.3);
     padding: 10px;
     font-size: 0.8rem;
     font-weight: 800;
+    margin-top: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
     transition: background-color 0.6s;
 
-    /* Transition for background color change */
+
 }
 
 .car-price:hover {
     background-color: #f0ad4e;
-    /* New background color on hover */
 }
 
 .reserve-button {
     display: block;
     padding: 10px 20px;
     background-color: rgb(4, 132, 17);
-    width: 90%;
     color: #fff;
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: 600;
 }
 .reserve-button i{
@@ -182,3 +177,40 @@ Example CSS
 .reserve-button:hover {
     background-color: rgb(9, 147, 9);
 }
+@media (max-width: 480px) {
+    .car-types-area {
+            overflow-x: scroll;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    
+     .button-div .car-image2 {
+         max-width: 100px;
+         height: auto;
+     }
+     .car-image2:hover {
+         scale: 1.09;
+     }
+     .button-div>p {
+         font-size: 12px     
+     }
+     .car-image {
+         padding: 4px 2px;
+     }
+     .car-card {
+         margin-block: 20px;
+         padding-block: 5px;
+     }
+     .specs-container i {
+              font-size: 1rem;
+     }   
+    .cars-container {
+        gap: 0px;
+        margin-block: 0px;
+        margin-inline: 10px;
+
+    }
+       
+}
+

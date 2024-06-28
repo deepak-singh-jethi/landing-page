@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 
-body {
+* {
     font-family: "Source Sans 3", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+   
     box-sizing: border-box;
-    overflow-x: hidden;
-    width: 100vw;
+}
+
+body{
+ overflow-x: hidden;
+width: 100vw;
+background-color: #ffffff;
 }
 
 header {
@@ -141,7 +145,7 @@ button:hover {
     gap: 30px;
     padding: 20px;
     margin-top: 60px;
-    background-image: url("./assests/banner 1.jpg");
+    background-image: url("./assets/banner\ 1.jpg");
     height: 40vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -165,7 +169,7 @@ button:hover {
     width: 100vw;
     gap: 30px;
     margin-top: 60px;
-    background-image: url("./assests/banner 2.jpg");
+    background-image: url("./assets/banner\ 2.jpg");
     height: 40vh;
     background-size:cover;
     background-repeat: no-repeat;
@@ -244,7 +248,7 @@ button:hover {
   
 }
 
-/* .footer-container {
+ .footer-container {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
@@ -305,9 +309,9 @@ button:hover {
 .footer-social-links a i {
     font-size: 1.5rem;
     margin-right: 1rem;
-} */
+} 
 
-/* .footer-bottom {
+ .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -321,4 +325,96 @@ button:hover {
 
 .footer-bottom p {
     margin: 0.5rem 0;
-} */
+} 
+
+
+/* Small Devices (Up to 480px) */
+@media (max-width: 480px) {
+.hero-area h1, .hero-area-2 h1 {
+    font-size: 24px;
+    text-align: center;
+}
+.hero-head{
+  margin-left: 4px;
+}
+.hero-head-2{
+    margin-right: 4px;
+}
+.whatsapp-Hero-Button {
+    padding: 4px 11px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.hero-area {
+    height: 35vh;
+    padding: 53px;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+.header-content h1 {
+    font-size: 20px;
+    margin: 13px 0px;
+}
+#whatsappButton {
+
+    padding: 6px 18px;
+
+    font-weight: 600;
+
+    margin-bottom: 34px;
+
+    display: flex;
+    align-items: center;
+}
+.features li {
+
+    margin: 7px;
+    line-height: 14px;
+
+}
+.feature-logo {
+    width: 50px;
+    height: 50px;
+}
+.features h3 {
+
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.feature-div p {
+    margin: 2px 0 0;
+    font-size: 11px;
+}
+.hero-head-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer-links a,
+.footer-social-links a {
+    font-size: 14px;
+}
+.footer-column p {
+    font-size: 16px;
+}
+ .footer-container {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     align-items: end;
+     justify-items: end;
+ }
+ .footer-column{
+    margin-top: 30px;
+ }
+ .footer {
+     padding: 0;
+ }
+
+}
