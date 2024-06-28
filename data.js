@@ -261,7 +261,10 @@ const carCategories = [
     name: "Luxury SUV",
     image: "https://mkvluxury.com/wp-content/uploads/2024/05/SUV2.png",
   },
-  { name: "Luxury Cars", image: "https://mkvluxury.com/fleets/#luxury-cars" },
+  {
+    name: "Luxury Cars",
+    image: "https://mkvluxury.com/wp-content/uploads/2024/05/sports-car2.png",
+  },
   {
     name: "Economy Cars",
     image:

@@ -1,14 +1,41 @@
 /* Example CSS */
-.button-container {
+.car-types-area {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    text-align: center;
+    gap: 40px;
+    margin: 90px 0;
 }
 
-.button-container button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    cursor: pointer;
+.button-div .car-image2 {
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    transition: all ease 0.8s;
+}
+.car-image2:hover{
+    scale: 1.5;
+}
+.button-div >p {
+    padding: 0;
+    margin: 0;
+    color: #303030;
+}
+
+.active-div{
+    border-bottom:rgb(169, 169, 169) ;
+}
+.active-div>p {
+    color: #f0ad4e;
+}
+.active-div >img{
+    scale: 1.4;
+}
+
+.button-container .car-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
 
 .cars-container {
@@ -19,7 +46,12 @@
     gap: 20px;
     margin-block: 20px;
     margin-inline: 60px;
+    transition: all ease-in 1s;
+    
 }
+
+
+
 /*  */
 .car-card  {
     max-width: 400px;
@@ -30,11 +62,28 @@
     transition: all ease 0.7s;
     box-shadow: 0 4px 8px rgba(159, 158, 158, 0.1);
     padding-block:15px ;
+    animation: cars 1.2s ease-in;
     /* Default box shadow */
+}
+
+@keyframes cars {
+    0% {
+        opacity: 0;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+
 }
 
 .car-card:hover {
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+    .car-price{
+        background-color: #f0ad4e;
+    }
     /* Enhanced box shadow on hover */
 }
 
@@ -53,7 +102,8 @@
 
 .car-category {
     color: #f6a636;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 600;
     padding: 2px;
     margin: 0px;
 }
@@ -63,7 +113,7 @@
     color: #2a2a2a;
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .specs-container {
@@ -96,10 +146,11 @@
     background-color: rgba(103, 241, 232, 0.2);
     padding: 10px;
     font-size: 0.8rem;
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 10px;
     border-radius: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.8s;
+
     /* Transition for background color change */
 }
 
@@ -111,7 +162,7 @@
 .reserve-button {
     display: block;
     padding: 10px 20px;
-    background-color: rgb(4, 122, 4);
+    background-color: rgb(4, 132, 17);
     width: 90%;
     color: #fff;
     text-decoration: none;
@@ -119,8 +170,13 @@
     transition: background-color 0.3s;
     text-align: center;
     margin-top: 10px;
+    font-weight: 600;
+}
+.reserve-button i{
+    margin-right: 10px;
+    font-size: 24px;
 }
 
 .reserve-button:hover {
-    background-color: #0056b3;
+    background-color: rgb(9, 147, 9);
 }

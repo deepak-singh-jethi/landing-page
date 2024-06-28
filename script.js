@@ -28,26 +28,40 @@ document.addEventListener("DOMContentLoaded", function () {
   const carCategoriesContainer = document.querySelector(".car-types-area");
 
   // Create category buttons
-  carCategory.forEach((category) => {
-    const button = document.createElement("button");
-    button.textContent = category;
-    if (category === "Economy Cars") {
-      button.classList.add("active-button");
-      selectedCategory = category;
+  carCategories.forEach((category) => {
+    // button
+    const buttonDiv = document.createElement("div");
+    const buttonTitle = document.createElement("p");
+    const buttonImage = document.createElement("img");
+
+    buttonDiv.classList.add("button-div");
+
+    // title and image
+    buttonTitle.textContent = category.name;
+
+    buttonImage.src = category.image;
+    buttonImage.classList.add("car-image2");
+
+    if (category.name === "Economy Cars") {
+      buttonDiv.classList.add("active-div");
+      selectedCategory = category.name;
     }
 
-    button.addEventListener("click", () => {
-      selectedCategory = category;
-      const activeButton = document.querySelector(".active-button");
-      if (activeButton) {
-        activeButton.classList.remove("active-button");
+    buttonDiv.addEventListener("click", () => {
+      selectedCategory = category.name;
+      const activeDiv = document.querySelector(".active-div");
+      if (activeDiv) {
+        activeDiv.classList.remove("active-div");
       }
-      button.classList.add("active-button");
-      displayCarsByCategory(category);
+
+      buttonDiv.classList.add("active-div");
+      displayCarsByCategory(category.name);
     });
 
-    button.classList.add("category-button");
-    carCategoriesContainer.appendChild(button);
+    buttonDiv.appendChild(buttonImage);
+    buttonDiv.appendChild(buttonTitle);
+
+    carCategoriesContainer.appendChild(buttonDiv);
   });
 
   // Function to display cars by category

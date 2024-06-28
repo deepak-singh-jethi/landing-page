@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 header {
@@ -75,10 +76,14 @@ button:hover {
     background-color: #128c7e;
 }
 
+
+/* features */
+
 .features {
     list-style: none;
     padding: 0;
     display: flex;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -91,12 +96,13 @@ button:hover {
 .features li {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 15px;
+    line-height: 23px;
 }
 
 .feature-logo {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     margin-right: 10px;
     background-position: center;
@@ -106,7 +112,7 @@ button:hover {
 
 .features h3 {
     margin: 0;
-    font-size: 19px;
+    font-size: 30px;
     font-weight: 600;
     color: #333;
 }
@@ -114,7 +120,10 @@ button:hover {
 .feature-div p {
     margin: 5px 0 0;
     color: #434040;
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: 550;
+    padding: 0;
+    margin: 0;
 }
 .feature-div{
     display: flex;
@@ -125,60 +134,79 @@ button:hover {
 
 /* hero area */
 .hero-area {
-    position: relative;
     width: 100%;
     gap: 30px;
     padding: 20px;
     margin-top: 60px;
-    background-image: linear-gradient(to right, rgba(9, 132, 112, 0.5), rgb(156, 245, 214));
-    background-size: cover;
+    background-image: url("./assests/banner\ 1.jpg");
+    height: 40vh;
+    background-size:cover;
+    background-repeat: no-repeat;
     background-position: center;
-    overflow: hidden;
-
+    z-index: 100;
 }
-.hero-area::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(65, 247, 183, 0.6);
-    z-index: 0;
-}
-.hero-wrapper{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-}
-
 .hero-head {
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     z-index: 10;
+    margin-left: 100px;
+}
+
+.hero-area-2 {
+    width: 100vw;
+    gap: 30px;
+    margin-top: 60px;
+    background-image: url("./assests/banner\ 2.jpg");
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+
+
+.hero-head-2{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    z-index: 10;
+    margin-right: 100px;
 }
 
 .hero-area h1 {
-    font-size: 24px;
+    font-size: 50px;
     color: #000000;
     text-align: left;
+    font-weight: 800;
 
 }
 
-.hero-area button {
+.hero-area-2 h1{
+    text-align: end;
+    font-size: 50px;
+}
+
+.whatsapp-Hero-Button {
     background-color: white;
     color: #058f3e;
     border: none;
-    padding: 12px 24px;
-    font-size: 16px;
+    padding:16px 24px;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     width: fit-content;
 }
 
-#hero-area button:hover {
+.whatsapp-Hero-Button:hover {
     background-color: #f0f0f0;
 }
 .hero-image-container{
