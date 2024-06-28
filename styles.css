@@ -1,0 +1,196 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: relative;
+    background: url('https://images.pexels.com/photos/3763190/pexels-photo-3763190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+   height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(243, 242, 242, 0.5);
+    z-index: 1;
+}
+
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    background-image: url('https://mkvluxury.com/wp-content/themes/mkv/img/logo.svg');
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+   
+    height: 150px;
+   
+    z-index: 10;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    font-size: 30px;
+    color: #000000;
+    margin: 0 0 20px;
+    max-width: 60rem;
+}
+
+
+#whatsappButton {
+    background-color: #058f3e;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #128c7e;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 4px 6px;
+    border-radius: 5px;
+    
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.feature-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.features h3 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 600;
+    color: #333;
+}
+
+.feature-div p {
+    margin: 5px 0 0;
+    color: #434040;
+    font-size: 12px;
+}
+.feature-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+/* hero area */
+.hero-area {
+    position: relative;
+    width: 100%;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 60px;
+    background-image: linear-gradient(to right, rgba(9, 132, 112, 0.5), rgb(156, 245, 214));
+    background-size: cover;
+    background-position: center;
+
+}
+.hero-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(65, 247, 183, 0.6);
+    z-index: 0;
+}
+.hero-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    margin-inline: auto;
+}
+
+.hero-head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.hero-area h1 {
+    font-size: 24px;
+    color: #000000;
+    text-align: left;
+
+}
+
+.hero-area button {
+    background-color: white;
+    color: #058f3e;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+#hero-area button:hover {
+    background-color: #f0f0f0;
+}
+.hero-image-container{
+    z-index: 10;
+    
+}
+
+.image-container{
+    width: 200px;
+    height: 200px;
+}
+
+.image-container img{
+    height: 100%;
+    width: auto;
+}
