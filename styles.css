@@ -203,15 +203,14 @@ button:hover {
     color: #000000;
     text-align: left;
     font-weight: 700;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
 }
 
 .hero-area-2 h1 {
     text-align: end;
     font-size: 50px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    font-weight: 700;
+    padding-top: 30px;
+
 }
 
 .whatsapp-Hero-Button {
