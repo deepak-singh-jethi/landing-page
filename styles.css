@@ -350,7 +350,7 @@ button:hover {
     display: block;
     background-position: left;
     position: relative;
-    height: 65vh;
+    height: 40vh;
 }
 .hero-area-2::before,.hero-area::before {
     content: '';
@@ -385,7 +385,7 @@ button:hover {
     align-items: center;
 }
 .hero-area {
-    height: 65vh;
+    height: 40vh;
     padding: 8px;
     margin-top: 60px;
     margin-inline: auto;
@@ -461,7 +461,7 @@ button:hover {
      padding: 0;
  }
  .footer-bottom p {
-     margin: 0.3rem 0;
+     margin: 0.1rem 0;
      font-size: 14px;
  }
  .footer-heading{
